@@ -20,7 +20,7 @@ bot = Client(
 
 
 
-@bot.on_message(filters.command(["start"], ['/', ".", "?"]))
+@bot.on_message(filters.command(["wstart"], ['/', ".", "?"]))
 async def start(client, message):
     buttons = [[
         InlineKeyboardButton("Repo", url="https://github.com/MoeZilla/telegram-senko-bot"),
@@ -73,7 +73,7 @@ async def new(_, m: Message):
 senko_group = 6
  
 @bot.on_message(
-    filters.group
+    & filters.group
     & filters.incoming
     & filters.reply
     & ~filters.via_bot
