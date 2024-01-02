@@ -78,7 +78,7 @@ senko_group = 6
     & filters.reply
     & ~filters.via_bot
     & ~filters.bot
-    & ~filters.edited,
+    & ~filters.edited
     group=senko_group,
 )
 async def senko(_, message):
