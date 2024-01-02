@@ -72,8 +72,7 @@ async def new(_, m: Message):
   
 senko_group = 6
  
-@bot.on_message(
-    & filters.group
+@bot.on_message(filters.group
     & filters.incoming
     & filters.reply
     & ~filters.via_bot
