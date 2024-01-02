@@ -1,7 +1,7 @@
 {
     "name": "Senko",
     "description": "Senko Welcome Bot",
-    "repository": "https://github.com/MoeZilla/senko-telegram-bot",
+    "repository": "https://github.com/PB65-Aujla/Telegram-Senko-Bot",
     "env": {
         "BOT_TOKEN": {
             "description": "telegram bot token here",
